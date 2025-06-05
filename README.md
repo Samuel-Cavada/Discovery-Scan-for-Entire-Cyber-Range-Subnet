@@ -15,7 +15,7 @@
 ---
 
 ## Project Objective
-> This project demonstrates how to run a discovery scan across an entire subnet within a cyber range environment. The goal is to identify active hosts in the 10.0.0.0/21 network and understand their potential roles and categorization within a larger simulated infrastructure.
+> This project demonstrates how to run a discovery scan across an entire subnet within a cyber range environment. The goal is to identify active hosts in the 10.xx.xx.xx/xx network and understand their potential roles and categorization within a larger simulated infrastructure.
 
 ---
 
@@ -51,35 +51,38 @@
 ---
 
 ### Step 1: Create Discovery Scan
-> - Logged into Tenable.io  
-> - Created a new scan and selected **Discovery Scan** as the type
+- Logged into Tenable.io portal at [https://cloud.tenable.com](https://cloud.tenable.com)
+- Created a new scan and selected **Discovery Scan** as the type
+  - Navigated to:  
+    `Scans → My Scans → Create Scan → Nessus Scanner → Host Discovery`
 
 ![Step 1](assets/images/step1.jpg)
 
 ---
 
 ### Step 2: Define Target Subnet
-> - For the **Targets**, entered the full subnet range:  
-  `10.0.0.0/21`
+
+- **Basic Tab**:
+  - **Name**: `(e.g., Host Scan)`
+  - **Description**: `Quick Description`
+  - **Scanner Type**: `Internal Scanner`  
+  - **Scanner**: `Auto-select`  
+  - **Network**: `entered the full subnet range: 10.xx.xx.xx/xx`  
+  - **Target**: `VM’s Public IP`  
+- **Save & Launch**
 
 ![Step 2](assets/images/step2.jpg)
 
 ---
 
-### Step 3: Launch and Monitor Scan
-> - Launched the scan and monitored its progress  
-> - Waited for asset discovery to complete
+### Step 3: Analyze and Tag Results
+- Checked the “Scans” tab in Tenable to view scan status and results:  
+  `Scans → My Scans → Your Agent Scan Name → See All Details`
+- Reviewed all discovered hosts
+- Considered each system’s potential purpose based on IP, hostname, or service banner  
+- Tagged assets by categories such as “Workstation,” “Server,” or “Unknown” as applicable
 
-![Step 3](assets/images/step3.jpg)
-
----
-
-### Step 4: Analyze and Tag Results
-> - Reviewed all discovered hosts  
-> - Considered each system’s potential purpose based on IP, hostname, or service banner  
-> - Tagged assets by categories such as “Workstation,” “Server,” or “Unknown” as applicable
-
-![Step 4](assets/images/step4.jpg)
+![Step 3](assets/images/step4.jpg)
 
 ---
 
