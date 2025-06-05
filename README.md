@@ -36,17 +36,16 @@
 ---
 
 ## Environment Setup
-> A cyber range lab environment was used to simulate an enterprise subnet. The scan was designed to cover the IP range `10.0.0.0/21`, providing visibility into all assets present within the defined range.
+> A cyber range lab environment was used to simulate an enterprise subnet. The scan was designed to cover the IP range `10.xx.xx.xx/xx`, providing visibility into all assets present within the defined range.
 
-![Environment Setup](assets/images/setup.jpg)
+![Environment Setup](https://github.com/Samuel-Cavada/Discovery-Scan-for-Entire-Cyber-Range-Subnet/blob/main/images/DSECRS1.png)
 
 ---
 
 ## Walkthrough
 1. [Step 1: Create Discovery Scan](#step-1-create-discovery-scan)
 2. [Step 2: Define Target Subnet](#step-2-define-target-subnet)
-3. [Step 3: Launch and Monitor Scan](#step-3-launch-and-monitor-scan)
-4. [Step 4: Analyze and Tag Results](#step-4-analyze-and-tag-results)
+3. [Step 3: Analyze and Tag Results](#step-3-analyze-and-tag-results)
 
 ---
 
@@ -55,8 +54,6 @@
 - Created a new scan and selected **Discovery Scan** as the type
   - Navigated to:  
     `Scans → My Scans → Create Scan → Nessus Scanner → Host Discovery`
-
-![Step 1](assets/images/step1.jpg)
 
 ---
 
@@ -71,7 +68,7 @@
   - **Target**: `VM’s Public IP`  
 - **Save & Launch**
 
-![Step 2](assets/images/step2.jpg)
+![Step 2](https://github.com/Samuel-Cavada/Discovery-Scan-for-Entire-Cyber-Range-Subnet/blob/main/images/DSECRS7.png)
 
 ---
 
@@ -82,7 +79,8 @@
 - Considered each system’s potential purpose based on IP, hostname, or service banner  
 - Tagged assets by categories such as “Workstation,” “Server,” or “Unknown” as applicable
 
-![Step 3](assets/images/step4.jpg)
+![Step 3](https://github.com/Samuel-Cavada/Discovery-Scan-for-Entire-Cyber-Range-Subnet/blob/main/images/DSECRS13.png)
+![Step 3](https://github.com/Samuel-Cavada/Discovery-Scan-for-Entire-Cyber-Range-Subnet/blob/main/images/DSECRS14.png)
 
 ---
 
